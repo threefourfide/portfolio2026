@@ -1,0 +1,13 @@
+#certification .cert-grid img { cursor: zoom-in; transition: transform 300ms cubic-bezier(.22,1,.36,1), box-shadow 300ms ease; }
+@media (hover:hover) and (pointer:fine) {
+  #certification .cert-grid img:hover { transform: scale(1.045); box-shadow: 0 10px 25px #C3005E30; position: relative; z-index: 1; }
+}
+#certification .cert-grid img:focus-visible { outline: 3px solid #C3005E; outline-offset: 5px; }
+.certificate-lightbox { position: fixed; inset: 0; z-index: 99999; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; padding: 24px; box-sizing: border-box; background: rgba(15, 8, 12, .78); backdrop-filter: blur(4px); cursor: zoom-out; outline: none; animation: certificate-fade 260ms ease both; }
+.certificate-lightbox img { display: block; max-width: min(92vw, 1200px); max-height: 82vh; max-height: 82dvh; width: auto; height: auto; object-fit: contain; border-radius: 8px; box-shadow: 0 18px 70px #0006; animation: certificate-zoom 320ms cubic-bezier(.22,1,.36,1) both; }
+.certificate-preview-hint { color: #F6F6F6; font-size: 12px; text-align: center; }
+.certificate-lightbox.is-closing { animation: certificate-fade 220ms ease reverse both; }
+.certificate-lightbox.is-closing img { animation: certificate-zoom 220ms ease reverse both; }
+@keyframes certificate-fade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes certificate-zoom { from { transform: scale(.93); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { #certification .cert-grid img { transition: none; } .certificate-lightbox, .certificate-lightbox img { animation-duration: 1ms !important; } }

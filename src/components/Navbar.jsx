@@ -1,0 +1,2 @@
+import React from 'react';
+export default function Navbar(){return <header className="nav"><a className="logo" href="#about">FM.</a><nav aria-label="Main navigation">{[['ABOUT','about'],['PROJECTS','projects'],['SKILLS','skills'],['CERTIFICATION','certification'],['CONTACT','contact']].map(([label,id])=><a key={id} href={'#'+id}>{label}</a>)}</nav><a className="button hello" href="#contact">say hello ➤</a></header>}

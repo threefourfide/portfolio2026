@@ -1,0 +1,48 @@
+
+main img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.hero {
+  align-items: stretch;
+}
+.hero .portrait {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  aspect-ratio: auto;
+  object-fit: contain;
+  object-position: center;
+  align-self: center;
+  min-width: 0;
+}
+.cert-grid img {
+  height: auto;
+  aspect-ratio: 1.37;
+  object-fit: contain;
+  object-position: center;
+  background: #fff;
+}
+.project img, .skill img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.hero, .contact {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (max-width: 650px) {
+  .hero .portrait {
+    width: 100%;
+    height: auto;
+    max-height: none;
+    aspect-ratio: auto;
+  }
+}
+@media (max-width: 360px) {
+  .cert-grid img { width: 100%; }
+}

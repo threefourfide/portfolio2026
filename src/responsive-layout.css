@@ -1,0 +1,25 @@
+/* Responsive sizing overrides — import after styles.css */
+h2{font-size:clamp(30px,4.2vw,60px);line-height:1.12}
+.nav{min-height:72px;padding:14px clamp(20px,4vw,64px);gap:20px}
+.logo{font-size:clamp(38px,4vw,60px)}
+.nav nav{gap:clamp(16px,3vw,44px);font-size:clamp(14px,1.2vw,18px)}
+.hello{font-size:16px;padding:12px 18px}
+.hero{grid-template-columns:minmax(0,49.2fr) minmax(0,50.8fr);min-height:0;align-items:stretch}
+.hero-copy{min-width:0;padding:clamp(28px,4.2vw,76px) clamp(24px,5vw,90px);justify-content:center;container-type:inline-size}
+.hero h1{font-size:clamp(30px,12cqi,88px);line-height:1.12;max-width:100%;letter-spacing:-.045em}
+.hero h3{font-size:clamp(18px,2vw,28px);margin:12px 0 24px}
+.hero p{font-size:clamp(14px,1.15vw,17px);line-height:1.5;max-width:480px;margin-bottom:16px}
+.hero .outline{font-size:14px;margin-top:12px}
+.portrait{min-width:0;min-height:0;height:100%;max-height:680px;object-fit:cover;object-position:center}
+.work-heading{padding:48px 20px 32px}.work-heading span{font-size:20px}
+.work{border-radius:42px 42px 0 0;padding:24px max(24px,calc((100% - 1260px)/2)) 48px}
+.projects{padding:0}.see-all{margin-bottom:22px}.see-all button{font-size:13px}
+.project-grid{gap:24px}.card{border-radius:24px;padding:24px;min-width:0}.project{min-height:260px}
+.card h3{font-size:clamp(23px,2.1vw,32px)}.project-top small,.skill h4,.project-top>span,.muted{font-size:11px}
+.project p{font-size:14px;line-height:1.5;margin:18px 0 12px}.tags{gap:6px}.tags span{font-size:11px;white-space:normal}.project-button{font-size:13px;margin-top:auto;align-self:flex-end}.project .tags{margin-bottom:18px}
+.skills{padding-top:72px}.skills h2{margin-bottom:32px}.skill-grid{gap:16px}.skill{min-height:270px;padding:24px}.skill h3{font-size:clamp(21px,2vw,28px)}.skill-group{margin-top:18px}.skill h4{margin-bottom:8px}
+.certifications{padding:56px 24px}.certifications h2{margin-bottom:36px}.cert-grid{max-width:1120px;margin:auto;gap:24px 40px}.cert-grid img{width:calc((100% - 80px)/3);border-width:6px;border-radius:12px}
+.contact{padding:clamp(72px,9vw,140px) 24px}.contact p{font-size:clamp(16px,2vw,24px);margin:24px 0 36px;line-height:1.5}.contact-links{gap:14px;font-size:15px}footer{padding:18px;font-size:13px}
+@media(max-width:950px){.nav{flex-wrap:wrap;gap:12px}.nav nav{order:3;width:100%;justify-content:center;flex-wrap:wrap}.hero-copy{padding:32px 24px}.skill-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.skill:last-child{grid-column:1/-1}.skill{min-height:0}}
+@media(max-width:650px){.nav{padding:12px 16px}.nav nav{gap:10px 15px;font-size:13px}.hello{font-size:14px}.hero{grid-template-columns:minmax(0,1fr)}.hero-copy{padding:32px 24px}.hero h1{font-size:clamp(30px,12cqi,64px)}.portrait{height:auto;max-height:480px;aspect-ratio:4/4;object-position:center 40%}.work{padding:20px 16px 36px;border-radius:28px 28px 0 0}.work-heading{padding:32px 16px 24px}.project-grid,.skill-grid{grid-template-columns:minmax(0,1fr);gap:16px}.skill:last-child{grid-column:auto}.card{padding:20px}.project{min-height:0}.skills{padding-top:44px}.certifications{padding:40px 16px}.cert-grid{gap:14px}.cert-grid img{width:calc((100% - 14px)/2);border-width:4px}.contact-links{flex-direction:column;align-items:center}.contact-links .outline{max-width:100%;overflow-wrap:anywhere}.desktop-break{display:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
