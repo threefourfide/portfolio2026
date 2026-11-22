@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&family=Lexend+Deca:wght@300;400;500;600;700&display=swap');
-/* Add your licensed Loubag file to public/fonts and enable this rule:
-@font-face{font-family:Loubag;src:url('/fonts/Loubag.woff2') format('woff2');font-display:swap;}
-*/
+@font-face {
+    font-family: 'Loubag';
+    src: url('/fonts/Loubag-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
 :root {
     --pink: #C3005E;
     --deep: #a50050;
@@ -290,4 +294,13 @@ button svg {
     width: 16px;
     height: 16px;
     flex-shrink: 0;
+}
+/* Force Loubag on the FM. navbar logo */
+.nav .logo,
+.navbar .logo,
+.logo {
+    font-family: 'Loubag', Georgia, serif !important;
+    font-weight: 700 !important;
+    font-style: normal;
+    letter-spacing: -0.04em;
 }

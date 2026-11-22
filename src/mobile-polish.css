@@ -34,7 +34,6 @@ h1,h2,.logo,.all-projects-heading h1 { font-family:'Loubag',Georgia,serif; }
     font-style: normal;
     font-display: swap;
 }
-/* Consistent Loubag headings across devices */
 .hero h1,
 .work-heading h2,
 .skills h2,
@@ -43,4 +42,11 @@ h1,h2,.logo,.all-projects-heading h1 { font-family:'Loubag',Georgia,serif; }
 .all-projects h1 {
     font-family: 'Loubag', Georgia, serif;
     font-weight: 700;
+}
+/* FM. logo — Loubag on desktop and mobile */
+.nav .logo {
+    font-family: 'Loubag', Georgia, serif !important;
+    font-weight: 700 !important;
+    font-style: normal;
+    letter-spacing: -0.04em;
 }
