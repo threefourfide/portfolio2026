@@ -27,3 +27,20 @@ h1,h2,.logo,.all-projects-heading h1 { font-family:'Loubag',Georgia,serif; }
   footer .back-to-top:hover {transform:translateY(-50%) scale(1.18);background:transparent;color:inherit;}
 }
 @media(prefers-reduced-motion:reduce){.nav nav{scroll-behavior:auto}}
+@font-face {
+    font-family: 'Loubag';
+    src: url('/fonts/Loubag-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+/* Consistent Loubag headings across devices */
+.hero h1,
+.work-heading h2,
+.skills h2,
+.certifications h2,
+.contact h2,
+.all-projects h1 {
+    font-family: 'Loubag', Georgia, serif;
+    font-weight: 700;
+}

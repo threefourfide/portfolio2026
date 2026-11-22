@@ -8,7 +8,7 @@ import Skills from './components/Skills.jsx';
 import Certifications from './components/Certifications.jsx';
 import Contact from './components/Contact.jsx';
 import AllProjects from './pages/AllProjects.jsx';
-
+import ArrowIcon from './components/ArrowIcon.jsx';
 import './projects-page.css';
 
 export default function App() {
@@ -192,7 +192,7 @@ export default function App() {
                         aria-label="Back to top"
                         title="Back to top"
                     >
-                        ↑
+                        <ArrowIcon direction="up" size={28} />
                     </button>
                 </footer>
             )}

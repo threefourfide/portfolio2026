@@ -1,4 +1,5 @@
 import React from 'react';
+import ArrowIcon from './ArrowIcon.jsx';
 
 export default function Navbar() {
   const links = [

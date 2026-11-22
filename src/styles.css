@@ -233,3 +233,48 @@ footer {
         will-change: auto;
     }
 }
+
+/* Consistent icons across desktop and mobile */
+a svg,
+button svg {
+    display: inline-block;
+    vertical-align: middle;
+    flex-shrink: 0;
+}
+
+.nav .hello,
+.see-all-link,
+.project-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+/* Prevent icons from becoming oversized on mobile */
+@media (max-width: 600px) {
+    a svg,
+    button svg {
+        max-width: 22px;
+        max-height: 22px;
+    }
+}
+/* Consistent button icon alignment */
+.nav .hello,
+.see-all-link,
+.project-button,
+.contact-links .outline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.nav .hello svg,
+.see-all-link svg,
+.project-button svg,
+.contact-links .outline svg,
+.back-to-top svg {
+    flex-shrink: 0;
+    vertical-align: middle;
+}
