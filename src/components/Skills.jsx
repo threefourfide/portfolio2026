@@ -53,7 +53,6 @@ const cards = [
                 'INTERMEDIATE (Learning)',
                 [
                     'Microsoft Word',
-                    'Google Drive',
                     'Python',
                     'React Native',
                     'ReactJS',
@@ -64,7 +63,12 @@ const cards = [
             ],
             [
                 'ADVANCED',
-                ['Canva', 'Microsoft Teams', 'Discord']
+                [
+                    'Canva',
+                    'Microsoft Teams',
+                    'Discord',
+                    'Google Drive'
+                ]
             ]
         ]
     }
